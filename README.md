@@ -2,6 +2,9 @@
 
 A beautiful, interactive wall calendar application with smooth animations, dark mode support, and an immersive space-themed background. Built with React, TypeScript, and Framer Motion.
 
+## LIVE DEMO 
+[View Live Project ](https://calender-app-puce.vercel.app/)
+
 ![Wall Calendar](https://img.shields.io/badge/React-18.3-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Vite](https://img.shields.io/badge/Vite-5.0-purple)
