@@ -46,23 +46,13 @@ A beautiful, interactive wall calendar application with smooth animations, dark 
 
 ---
 
-## � Screenshots
+## 📸 Screenshots
 
-### Light Mode
-
-![Light Mode](docs/screenshots/light-mode.png)
-
-### Dark Mode with Space Background
-
-![Dark Mode](docs/screenshots/dark-mode.png)
-
-### Page Flip Animation
-
-![Page Flip](docs/screenshots/page-flip.gif)
-
-### Mobile View
-
-![Mobile](docs/screenshots/mobile-view.png)
+![Screenshot](./Screenshot1.png)
+![Screenshot](./Screenshot2.png)
+![Screenshot](./Screenshot3.png)
+![Screenshot](./Screenshot4.png)
+![Screenshot](./Screenshot5.png)
 
 ---
 
