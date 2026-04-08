@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbars while keeping scroll functionality */
+html, body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+  :root {
+    --background: 220 14% 90%;
+    --foreground: 220 25% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 14%;
+
+    --primary: 205 85% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 220 25% 14%;
+
+    --muted: 214 20% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 205 85% 93%;
+    --accent-foreground: 205 85% 35%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 205 85% 50%;
+
+    --radius: 0.5rem;
+
+    /* Calendar tokens */
+    --cal-range: 205 85% 92%;
+    --cal-range-foreground: 205 85% 35%;
+    --cal-today: 205 85% 50%;
+    --cal-today-foreground: 0 0% 100%;
+    --cal-weekend: 0 75% 55%;
+    --cal-note-dot: 205 85% 50%;
+    --cal-wall: 30 15% 82%;
+    --cal-paper: 40 20% 97%;
+    --cal-shadow: 0 20px 60px -15px hsla(220, 25%, 14%, 0.35);
+    --cal-shadow-sm: 0 4px 12px -4px hsla(220, 25%, 14%, 0.15);
+    --cal-hook: 220 10% 45%;
+    --cal-spiral: 220 10% 55%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --cal-holiday: 0 75% 55%;
+    --cal-holiday-bg: 0 75% 95%;
+  }
+
+  .dark {
+    --background: 222 20% 12%;
+    --foreground: 210 20% 90%;
+
+    --card: 222 18% 16%;
+    --card-foreground: 210 20% 90%;
+
+    --popover: 222 18% 16%;
+    --popover-foreground: 210 20% 90%;
+
+    --primary: 205 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 22%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 14% 20%;
+    --muted-foreground: 215 16% 55%;
+
+    --accent: 205 50% 20%;
+    --accent-foreground: 205 85% 75%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 24%;
+    --input: 220 14% 24%;
+    --ring: 205 85% 55%;
+
+    --cal-range: 205 50% 22%;
+    --cal-range-foreground: 205 85% 75%;
+    --cal-today: 205 85% 55%;
+    --cal-today-foreground: 0 0% 100%;
+    --cal-weekend: 0 65% 60%;
+    --cal-note-dot: 205 85% 55%;
+    --cal-wall: 222 15% 8%;
+    --cal-paper: 222 18% 16%;
+    --cal-shadow: 0 20px 60px -15px hsla(0, 0%, 0%, 0.6);
+    --cal-shadow-sm: 0 4px 12px -4px hsla(0, 0%, 0%, 0.4);
+    --cal-hook: 220 10% 60%;
+    --cal-spiral: 220 10% 40%;
+
+    --cal-holiday: 0 65% 60%;
+    --cal-holiday-bg: 0 50% 20%;
+
+    --sidebar-background: 222 18% 14%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 210 20% 90%;
+    --sidebar-primary-foreground: 222 18% 14%;
+    --sidebar-accent: 220 14% 20%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 220 14% 24%;
+    --sidebar-ring: 205 85% 55%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
